@@ -8,23 +8,34 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 };
 
 const eqArrays = function (array1, array2) {
-  let identicalElm = 0;
-  for (let i = 0; i < (array1.length); i++) {
-    if (array1[i] === array2[i]) {
-      identicalElm += 1;
-    }
-  }
-  if (identicalElm === array1.length) {
-    return true;
+  if(array1.length !== array2.length) {
+    return false
   } else {
-    return false;
+    for (let i = 0; i < array1.length; i++) {
+      if (array1[i] !== array2[i]) {
+        return false;
+      }
+    }
+    return true;
   }
 }
 
 const without = function (source, itemsToRemove) {
-
   const newArray = source.filter(item => !itemsToRemove.includes(item));
   return newArray;
+  
+  // let newArray = [];
+  // for (let elm of source) {
+  //   newArray.push(elm);
+  // }
+  // for (let i = 0; i < newArray.length; i++) {
+  //   for (let item of itemsToRemove) {
+  //     if (newArray[i] === item) {
+  //       newArray.splice(i, 1);
+  //     }
+  //   }
+  // }
+  // return newArray;
 }
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3])
