@@ -7,16 +7,30 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function (array1, array2) {
-  let identicalElm = 0;
-  for (let i = 0; i < (array1.length); i++) {
-    if (array1[i] === array2[i]) {
-      identicalElm += 1;
-    }
-  }
-  if (identicalElm === array1.length) {
-    return true;
+  if(array1.length !== array2.length) {
+    return false
   } else {
-    return false;
+    // [1,2,3] => '123'
+    // if(array1.toString() === array2.toString()) {
+    //   return true
+    // }
+    //for (let i = 0; i < array1.length; i++) {
+    //  if (array1[i] !== array2[i]) {
+    //    return false
+    //  }
+    //}
+
+   let identicalElm = 0;
+   for (let i = 0; i < array1.length; i++) {
+     if (array1[i] === array2[i]) {
+       identicalElm += 1;
+     }
+   }
+   if (identicalElm === array1.length) {
+     return true;
+   } else {
+     return false;
+   }
   }
 }
 
