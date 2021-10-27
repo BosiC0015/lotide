@@ -22,14 +22,8 @@ const eqArrays = function (array1, array2) {
 }
 
 const without = function (source, itemsToRemove) {
-  let newArray = source;
-  for (let i = 0; i < newArray.length; i++) {
-    for (item of itemsToRemove) {
-      if (newArray[i] === item) {
-        newArray.splice(i, 1);
-      }
-    }
-  }
+
+  const newArray = source.filter(item => !itemsToRemove.includes(item));
   return newArray;
 }
 
