@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@bosic0015/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "created only for learning purpose",
   "main": "assertEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/BosiC0015/lotide.git"
   },
-  "author": "",
+  "author": "bosic0015",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BosiC0015/lotide/issues"
