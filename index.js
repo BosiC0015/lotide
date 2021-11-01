@@ -16,20 +16,20 @@ const takeUntil = require('./takeUntil');
 const findKey = require('./findKey');
 
 module.exports = {
-  assertEqual : assertEqual,
-  assertArraysEqual : assertArraysEqual,
-  assertObjectsEqual : assertObjectsEqual,
-  eqArrays : eqArrays,
-  eqObjects : eqObjects,
-  head: head,
-  tail: tail,
-  middle: middle,
-  without: without,
-  countOnly : countOnly,
-  countLetters : countLetters,
-  letterPositions : letterPositions,
-  findKeyByValue : findKeyByValue,
-  map : map,
-  takeUntil : takeUntil,
-  findKey : findKey
+  assertEqual,
+  assertArraysEqual,
+  assertObjectsEqual,
+  eqArrays,
+  eqObjects,
+  head,
+  tail,
+  middle,
+  without,
+  countOnly,
+  countLetters,
+  letterPositions,
+  findKeyByValue,
+  map,
+  takeUntil,
+  findKey
 };
